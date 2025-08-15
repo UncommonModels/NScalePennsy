@@ -1,0 +1,256 @@
+nav ul li a.active {
+  font-weight: bold;
+  color: #FFD700;
+}
+/* Post card styling for previews on index page */
+.post-card {
+  background: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(106,36,35,0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 4px 16px rgba(106,36,35,0.15);
+}
+
+.post-card a {
+  color: #6A2423;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+/* Import League Spartan from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap');
+
+/* Pennsylvania Railroad Modernism Theme */
+
+/* Use League Spartan to evoke a lighter geometric, modern style */
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: #e0e0e0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; /* Makes all text uppercase */
+  font-weight: 300; /* Lightened font weight for body text */
+}
+
+header {
+  background: #6A2423; /* Rich burgundy base */
+  color: #FFD700; /* Gold text */
+  text-align: center;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.stripe {
+  height: 1px; /* Consistent thinner lines for all stripes */
+  background: #FFD700; /* Gold stripe */
+  width: 100%; /* Stripes extend edge-to-edge */
+  margin: 1.5rem 0; /* Same spacing for top and bottom stripes */
+}
+
+header .oval {
+  position: relative;
+  display: inline-block;
+  background: #4B1F1D; /* Darker Tuscan Red */
+  color: #FFD700; /* Gold text */
+  width: 95%; /* Wider oval */
+  max-width: 75rem;
+  height: 5rem; /* Taller oval to balance wider design */
+  border-radius: 2.5rem;
+  border: 1px solid #FFD700; /* Thinner border */
+  line-height: 5rem; /* Center text vertically */
+  font-size: 3rem; /* Slightly smaller font size for responsiveness */
+  font-weight: 100; /* Lightened font weight for header text */
+  text-align: center;
+  padding: 1rem auto;
+  text-transform: uppercase; /* Makes the title uppercase */
+  letter-spacing: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .oval {
+    font-size: 2rem; /* Smaller font size for mobile */
+    letter-spacing: 0.25em;
+    padding: 0.5rem auto;
+    max-width: 95%;
+  }
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  color: #FFD700; /* Gold links */
+  text-decoration: none;
+  font-weight: 400; /* Lightened font weight */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 70rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #6A2423; /* Burgundy border accent */
+}
+
+footer {
+  background: #6A2423; /* Rich burgundy color for footer */
+  color: #FFD700; /* Gold text */
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-transform: uppercase; /* Makes footer text uppercase */
+}
+
+footer ul {
+  list-style: none; /* Removes bullets from footer links */
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap; /* Allows multiple columns */
+  justify-content: center; /* Centers items */
+  gap: 1rem; /* Adds spacing between items */
+}
+
+footer ul li {
+  flex: 1 1 calc(25% - 1rem); /* Makes items take up 25% width with spacing */
+  text-align: center;
+}
+
+footer ul li a {
+  color: #FFD700; /* Gold links */
+  text-decoration: none;
+  font-weight: 400; /* Lightened font weight */
+}
+
+footer ul li a:visited {
+  color: #FFD700; /* Keeps visited links gold */
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Intro section styling reflects modern design aesthetics */
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #6A2423; /* Burgundy text */
+  font-weight: 400;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Tags section styling */
+.tags h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #6A2423; /* Burgundy text */
+  text-align: center;
+  font-weight: 400; /* Lightened font weight */
+}
+
+.tag-category {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 2px solid #FFD700; /* Gold border */
+  background: #fafafa;
+  transition: transform 0.3s ease;
+}
+
+.tag-category:hover {
+  transform: translateY(-5px);
+}
+
+/* Tag header styling */
+.tag-category h3 {
+  margin-top: 0;
+  color: #6A2423; /* Burgundy text */
+  font-weight: 400; /* Lightened font weight */
+}
+
+/* List styling */
+.tag-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tag-category ul li {
+  margin-bottom: 0.5rem;
+}
+
+.tag-category a {
+  color: #6A2423; /* Burgundy links */
+  text-decoration: none;
+  font-weight: 300; /* Lightened font weight */
+}
+
+.tag-category a:hover {
+  text-decoration: underline;
+}
+
+/* Figure styling */
+.tag-category figure {
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+.tag-category img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.tag-category figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-weight: 300; /* Lightened font weight */
+}

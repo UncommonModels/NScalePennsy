@@ -1,0 +1,58 @@
+---
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <main>
+
+    <section class="intro" id="intro">
+      <h2>Welcome to the N Scale Pennsy project</h2>
+      <p>Explore the rich history and aesthetic of one of the most iconic railroads of the 20th century.</p>
+    </section>
+
+    <section class="tags" id="tags">
+      <h2>Explore By Category</h2>
+      <div class="tag-category">
+        <h3>History</h3>
+        <ul>
+          {% assign recent_posts = site.posts | sort: 'date' | reverse | slice: 0, 3 %}
+          {% for post in recent_posts %}
+          <li>
+            <div class="post-card">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="tag-category">
+        <h3>Design</h3>
+        <ul>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#branding">Branding</a></li>
+          <li><a href="#industrial">Industrial Design</a></li>
+        </ul>
+      </div>
+
+      <div class="tag-category">
+        <h3>Technology</h3>
+        <ul>
+          <li><a href="#locomotives">Locomotives</a></li>
+          <li><a href="#signals">Signals and Communication</a></li>
+          <li><a href="#innovation">Innovation</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  {% include footer.html %}
+</body>
+
+</html>

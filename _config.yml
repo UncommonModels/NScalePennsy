@@ -1,0 +1,29 @@
+# Site settings
+title: "N Scale Pennsy"
+description: "A comparison of N scale rolling stock and locomotives of the Pennsylvania Railroad to their real-life counterparts."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nscalepennsy.uncommonmodels.com" # the base hostname & protocol for your site
+initial_publication: 2025
+footer_links:
+  - title: Uncommon Models
+    url: https://www.uncommonmodels.com/
+
+nav_entries:
+  - name: Passenger
+    tags:
+      - Sleepers
+      - Coaches
+      - Dining Cars
+      - Observation Cars
+  - name: Freight
+    tags:
+      - Boxcars
+      - Flatcars
+      - Tank Cars
+      - Hoppers
+      - Gondolas
+  - name: Motive Power
+    tags:
+      - Steam Locomotives
+      - Diesel Locomotives
+      - Electric Locomotives

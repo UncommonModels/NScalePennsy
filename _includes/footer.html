@@ -1,0 +1,8 @@
+<footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    <ul>
+      {% for link in site.footer_links %}
+        <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </footer>
