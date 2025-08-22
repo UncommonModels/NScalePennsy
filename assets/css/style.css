@@ -1,3 +1,6 @@
+footer {
+  margin-top: auto;
+}
 nav ul li a.active {
   font-weight: bold;
   color: #FFD700;
@@ -47,6 +50,30 @@ body {
   padding: 0;
   text-transform: uppercase; /* Makes all text uppercase */
   font-weight: 300; /* Lightened font weight for body text */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  max-width: 70rem;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #6A2423; /* Burgundy border accent */
+  flex: 1;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  main {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
 }
 
 header {
@@ -120,23 +147,18 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-main {
-  padding: 2rem;
-  background: #fff;
-  margin: 2rem auto;
-  max-width: 70rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #6A2423; /* Burgundy border accent */
-}
+
 
 footer {
   background: #6A2423; /* Rich burgundy color for footer */
   color: #FFD700; /* Gold text */
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 1.5rem 0;
   font-size: 0.9rem;
   text-transform: uppercase; /* Makes footer text uppercase */
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
 
 footer ul {
@@ -188,8 +210,8 @@ footer ul li a:hover {
   font-weight: 300;
 }
 
-/* Tags section styling */
-.tags h2 {
+/* Posts section styling */
+.posts h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #6A2423; /* Burgundy text */
@@ -197,60 +219,29 @@ footer ul li a:hover {
   font-weight: 400; /* Lightened font weight */
 }
 
-.tag-category {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 2px solid #FFD700; /* Gold border */
-  background: #fafafa;
-  transition: transform 0.3s ease;
-}
-
-.tag-category:hover {
-  transform: translateY(-5px);
-}
-
-/* Tag header styling */
-.tag-category h3 {
-  margin-top: 0;
-  color: #6A2423; /* Burgundy text */
-  font-weight: 400; /* Lightened font weight */
-}
 
 /* List styling */
-.tag-category ul {
+.posts ul {
   list-style: none;
   padding: 0;
 }
 
-.tag-category ul li {
+.posts ul li {
   margin-bottom: 0.5rem;
 }
 
-.tag-category a {
-  color: #6A2423; /* Burgundy links */
-  text-decoration: none;
-  font-weight: 300; /* Lightened font weight */
+p {
+  text-transform: none;
 }
 
-.tag-category a:hover {
-  text-decoration: underline;
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
 }
 
-/* Figure styling */
-.tag-category figure {
-  margin: 1rem 0 0;
+td, th {
+  padding: 0.25rem 0.5rem; /* Adds space inside cells */
   text-align: center;
-}
-
-.tag-category img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-}
-
-.tag-category figcaption {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.5rem;
-  font-weight: 300; /* Lightened font weight */
 }

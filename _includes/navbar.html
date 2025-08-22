@@ -1,13 +1,25 @@
 <nav>
   <ul>
     <li>
-      <a href="{{ '/' | relative_url }}"
-         {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}>
+      <a href="{{ '/' | relative_url }}" {% if page.url=='/' or page.url=='/index.html' %}class="active" {% endif %}>
         Home
       </a>
     </li>
+    <li>
+      <a href="{{ '/blog.html' | relative_url }}" {% if page.url=='/blog.html' %}class="active" {% endif %}>
+        Blog
+      </a>
+    </li>
     {% for entry in site.nav_entries %}
-      <li><a href="{{ site.baseurl }}/{{ entry.name | slugify }}"{% if page.url == "{{ site.baseurl }}/{{ entry.name | slugify }}/index.html" %} class="active"{% endif %}>{{ entry.name }}</a></li>
+      {% assign entry_url = entry | slugify | relative_url %}
+      {% assign entry_url_index = entry_url | append: '/index.html' %}
+      {% assign entry_url_slash = entry_url | append: '/' %}
+      <li>
+        <a href="{{ entry_url }}"
+          {% if page.url == entry_url or page.url == entry_url_index or page.url == entry_url_slash %}class="active"{% endif %}>
+          {{ entry }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </nav>

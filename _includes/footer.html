@@ -1,8 +1,15 @@
 <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-    <ul>
-      {% for link in site.footer_links %}
-        <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </footer>
+  <p>
+    &copy;
+    {% assign current_year = site.time | date: "%Y" | plus: 0 %}
+    {% if site.initial_publication != current_year %}
+    {{ site.initial_publication }} -
+    {% endif %}
+    {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
+  </p>
+  <ul>
+    {% for link in site.footer_links %}
+    <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</footer>

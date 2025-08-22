@@ -1,0 +1,21 @@
+---
+title: Blog
+layout: default
+---
+
+<section class="intro" id="intro">
+  <h2>{{page.title}}</h2>
+</section>
+<section class="posts">
+    <ul>
+      {% assign recent_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in recent_posts %}
+      <li>
+        <div class="post-card">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+</section>

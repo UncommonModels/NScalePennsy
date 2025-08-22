@@ -9,21 +9,6 @@ footer_links:
     url: https://www.uncommonmodels.com/
 
 nav_entries:
-  - name: Passenger
-    tags:
-      - Sleepers
-      - Coaches
-      - Dining Cars
-      - Observation Cars
-  - name: Freight
-    tags:
-      - Boxcars
-      - Flatcars
-      - Tank Cars
-      - Hoppers
-      - Gondolas
-  - name: Motive Power
-    tags:
-      - Steam Locomotives
-      - Diesel Locomotives
-      - Electric Locomotives
+  - Passenger
+  - Freight
+  - Motive Power
