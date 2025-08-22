@@ -11,8 +11,7 @@
         <p>{{ page.description }}</p>
       </section>
       <section class="category-list">
-        {% assign candidate_subfolders = site.pages | where_exp: "item", "item.dir != page.dir and item.dir != '' and
-        item.dir contains page.dir" | map: "dir" | uniq | sort %}
+        {% assign candidate_subfolders = site.pages | where_exp: "item", "item.dir != page.dir and item.dir != '' and item.dir contains page.dir" | map: "dir" | uniq | sort %}
         {% assign direct_subfolders = '' | split: '' %}
         {% for subfolder in candidate_subfolders %}
         {% assign relative = subfolder | remove_first: page.dir %}
