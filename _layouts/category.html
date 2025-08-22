@@ -3,50 +3,55 @@
 {% include head.html %}
 
 <body>
-    {% include header.html %}
+  {% include header.html %}
 
-    <main>
-      <section class="intro" id="intro">
-        <h2>{{ page.title }}</h2>
-        <p>{{ page.description }}</p>
-      </section>
-      <section class="category-list">
-        {% assign candidate_subfolders = site.pages | where_exp: "item", "item.dir != page.dir and item.dir != '' and item.dir contains page.dir" | map: "dir" | uniq | sort %}
-        {% assign direct_subfolders = '' | split: '' %}
-        {% for subfolder in candidate_subfolders %}
-        {% assign relative = subfolder | remove_first: page.dir %}
-        {% assign parts = relative | split: '/' %}
-        {% if page.dir == '' %}
-        {% assign depth = 1 %}
-        {% else %}
-        {% assign depth = page.dir | split: '/' | size | plus: 1 %}
-        {% endif %}
-        {% assign subfolder_depth = subfolder | split: '/' | size %}
-        {% if subfolder_depth == depth %}
-        {% assign direct_subfolders = direct_subfolders | push: subfolder %}
-        {% endif %}
+  <main>
+    <section class="intro" id="intro">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+    </section>
+    <section class="category-list">
+      {% assign candidate_subfolders = site.pages
+      | reject: "dir", page.dir
+      | reject: "dir", ''
+      | where_exp: "item", "item.dir contains page.dir"
+      | map: "dir"
+      | uniq
+      | sort %} {% assign direct_subfolders = '' | split: '' %}
+      {% for subfolder in candidate_subfolders %}
+      {% assign relative = subfolder | remove_first: page.dir %}
+      {% assign parts = relative | split: '/' %}
+      {% if page.dir == '' %}
+      {% assign depth = 1 %}
+      {% else %}
+      {% assign depth = page.dir | split: '/' | size | plus: 1 %}
+      {% endif %}
+      {% assign subfolder_depth = subfolder | split: '/' | size %}
+      {% if subfolder_depth == depth %}
+      {% assign direct_subfolders = direct_subfolders | push: subfolder %}
+      {% endif %}
+      {% endfor %}
+      {% if direct_subfolders.size > 0 %}
+      {% for subfolder in direct_subfolders %}
+      {% assign subfolder_pages = site.pages | where: "dir", subfolder %}
+
+      <h3>
+        {{ subfolder | split: '/' | last | replace: '_', ' ' | replace: '-', ' ' | upcase }}
+      </h3>
+      <ul>
+        {% for subpage in subfolder_pages %}
+        <li>
+          <a href="{{ subpage.url }}">{{ subpage.title }}</a>
+        </li>
         {% endfor %}
-        {% if direct_subfolders.size > 0 %}
-        {% for subfolder in direct_subfolders %}
-        {% assign subfolder_pages = site.pages | where: "dir", subfolder %}
+      </ul>
 
-        <h3>
-          {{ subfolder | split: '/' | last | replace: '_', ' ' | replace: '-', ' ' | upcase }}
-        </h3>
-        <ul>
-          {% for subpage in subfolder_pages %}
-          <li>
-            <a href="{{ subpage.url }}">{{ subpage.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-
-        {% endfor %}
-        {% else %}
-        No subfolders found for this category.
-        {% endif %}
-      </section>
-    </main>
+      {% endfor %}
+      {% else %}
+      No subfolders found for this category.
+      {% endif %}
+    </section>
+  </main>
 </body>
 {% include footer.html %}
 
