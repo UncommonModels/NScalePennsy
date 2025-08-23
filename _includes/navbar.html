@@ -11,15 +11,26 @@
       </a>
     </li>
     {% for entry in site.nav_entries %}
-      {% assign entry_url = entry | slugify | relative_url %}
-      {% assign entry_url_index = entry_url | append: '/index.html' %}
-      {% assign entry_url_slash = entry_url | append: '/' %}
-      <li>
-        <a href="{{ entry_url }}"
-          {% if page.url == entry_url or page.url == entry_url_index or page.url == entry_url_slash %}class="active"{% endif %}>
-          {{ entry }}
-        </a>
-      </li>
+    {% assign entry_url = entry.url | relative_url %}
+    {% assign entry_url_index = entry_url | append: '/index.html' %}
+    {% assign entry_url_slash = entry_url | append: '/' %}
+    <li>
+      <a href="" {% if page.url contains entry_url %}class="active" {% endif %}>
+        {{ entry.name }}
+      </a>
+      {% if entry.subentries %}
+      <ul class="dropdown">
+        {% for subentry in entry.subentries %}
+        {% assign subentry_url = subentry.url | relative_url %}
+        <li>
+          <a href="{{ subentry_url }}" {% if page.url==subentry_url %}class="active" {% endif %}>
+            {{ subentry.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
     {% endfor %}
   </ul>
 </nav>

@@ -9,6 +9,27 @@ footer_links:
     url: https://www.uncommonmodels.com/
 
 nav_entries:
-  - Passenger
-  - Freight
-  - Motive Power
+  - name: Passenger Cars
+    url: /passenger/
+    subentries:
+      - name: Coach Cars
+        url: /passenger/coaches.html
+      - name: Observation Cars
+        url: /passenger/observation.html
+
+  - name: Freight Cars
+    url: /freight/
+    subentries:
+      - name: Boxcars
+        url: /freight/boxcars.html
+      - name: Cabin Cars
+        url: /freight/cabin-cars.html
+      - name: Flatcars
+        url: /freight/flatcars.html
+  - name: Motive Power
+    url: /motive-power/
+    subentries:
+      - name: Steam
+        url: /motive-power/steam.html
+      - name: Electric
+        url: /motive-power/electric.html

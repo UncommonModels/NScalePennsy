@@ -1,247 +1,344 @@
-footer {
-  margin-top: auto;
-}
-nav ul li a.active {
-  font-weight: bold;
-  color: #FFD700;
-}
-/* Post card styling for previews on index page */
-.post-card {
-  background: #fff;
-  border: 2px solid #FFD700;
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(106,36,35,0.08);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap');
 
-.post-card:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 4px 16px rgba(106,36,35,0.15);
-}
+  /* Pennsylvania Railroad Modernism Theme */
 
-.post-card a {
-  color: #6A2423;
-  font-size: 1.3rem;
-  font-weight: 400;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.5rem;
-}
+  /* Use League Spartan to evoke a lighter geometric, modern style */
+  body {
+    font-family: 'League Spartan', sans-serif;
+    background: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
-.post-card p {
-  color: #333;
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 0;
-}
-/* Import League Spartan from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap');
-
-/* Pennsylvania Railroad Modernism Theme */
-
-/* Use League Spartan to evoke a lighter geometric, modern style */
-body {
-  font-family: 'League Spartan', sans-serif;
-  background: #e0e0e0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; /* Makes all text uppercase */
-  font-weight: 300; /* Lightened font weight for body text */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-main {
-  max-width: 70rem;
-  width: 100%;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #6A2423; /* Burgundy border accent */
-  flex: 1;
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
   main {
-    max-width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
+    max-width: 70rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #6A2423;
+    flex: 1;
   }
-}
+  main h1{
+    padding-top: 2rem;
+  }
 
-header {
-  background: #6A2423; /* Rich burgundy base */
-  color: #FFD700; /* Gold text */
-  text-align: center;
-  position: relative;
-  padding: 2rem 0;
-}
+  main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #6A2423;
+    font-weight: 400;
+    text-align: center;
+  }
 
-.stripe {
-  height: 1px; /* Consistent thinner lines for all stripes */
-  background: #FFD700; /* Gold stripe */
-  width: 100%; /* Stripes extend edge-to-edge */
-  margin: 1.5rem 0; /* Same spacing for top and bottom stripes */
-}
+  main li {
+    text-transform: none;
+  }
 
-header .oval {
-  position: relative;
-  display: inline-block;
-  background: #4B1F1D; /* Darker Tuscan Red */
-  color: #FFD700; /* Gold text */
-  width: 95%; /* Wider oval */
-  max-width: 75rem;
-  height: 5rem; /* Taller oval to balance wider design */
-  border-radius: 2.5rem;
-  border: 1px solid #FFD700; /* Thinner border */
-  line-height: 5rem; /* Center text vertically */
-  font-size: 3rem; /* Slightly smaller font size for responsiveness */
-  font-weight: 100; /* Lightened font weight for header text */
-  text-align: center;
-  padding: 1rem auto;
-  text-transform: uppercase; /* Makes the title uppercase */
-  letter-spacing: 0.5rem;
-}
+  main hr{
+    border: none;
+    border-top: 1px solid #6A2423;
+    margin: 0 0;
+  }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+  header {
+    background: #6A2423;
+    color: #FFD700;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  .stripe {
+    height: 1px;
+    background: #FFD700;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
   header .oval {
-    font-size: 2rem; /* Smaller font size for mobile */
-    letter-spacing: 0.25em;
-    padding: 0.5rem auto;
-    max-width: 95%;
+    position: relative;
+    display: inline-block;
+    background: #4B1F1D;
+    color: #FFD700;
+    width: 95%;
+    max-width: 75rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    border: 1px solid #FFD700;
+    line-height: 5rem;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 1rem auto;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
   }
-}
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
+  nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+  }
 
-nav ul li {
-  margin-right: 1.5rem;
-}
+  nav ul li {
+    position: relative;
+    margin-right: 1.5rem;
+  }
 
-nav ul li a {
-  color: #FFD700; /* Gold links */
-  text-decoration: none;
-  font-weight: 400; /* Lightened font weight */
-}
+  nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 400;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
 
-nav ul li a.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
+  nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FFD700;
+  }
 
+  nav ul li>.dropdown {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #6A2423;
+    color: #FFD700;
+    min-width: 12rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    border-radius: 0.5rem;
+    pointer-events: auto;
+  }
 
+  nav ul li:hover>.dropdown,
+  nav ul li:focus-within>.dropdown {
+    display: block;
+  }
 
-footer {
-  background: #6A2423; /* Rich burgundy color for footer */
-  color: #FFD700; /* Gold text */
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-  text-transform: uppercase; /* Makes footer text uppercase */
-  position: relative;
-  width: 100%;
-  bottom: 0;
-}
+  .dropdown li {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
 
-footer ul {
-  list-style: none; /* Removes bullets from footer links */
-  padding: 0;
-  margin: 1rem 0;
-  display: flex;
-  flex-wrap: wrap; /* Allows multiple columns */
-  justify-content: center; /* Centers items */
-  gap: 1rem; /* Adds spacing between items */
-}
+  .dropdown a {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    color: #FFD700;
+    background: none;
+    text-decoration: none;
+    font-weight: 400;
+  }
 
-footer ul li {
-  flex: 1 1 calc(25% - 1rem); /* Makes items take up 25% width with spacing */
-  text-align: center;
-}
+  .dropdown a:hover,
+  .dropdown a.active {
+    background: #FFD700;
+    color: #6A2423;
+  }
 
-footer ul li a {
-  color: #FFD700; /* Gold links */
-  text-decoration: none;
-  font-weight: 400; /* Lightened font weight */
-}
+  footer {
+    background: #6A2423;
+    color: #FFD700;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+  }
 
-footer ul li a:visited {
-  color: #FFD700; /* Keeps visited links gold */
-}
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-footer ul li a:hover {
-  text-decoration: underline;
-}
+  footer ul li {
+    flex: 1 1 calc(25% - 1rem);
+    text-align: center;
+  }
 
-/* Intro section styling reflects modern design aesthetics */
-.intro {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding: 0 1rem;
-}
+  footer ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 400;
+  }
 
-.intro h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #6A2423; /* Burgundy text */
-  font-weight: 400;
-}
+  footer ul li a:visited {
+    color: #FFD700;
+  }
 
-.intro p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 300;
-}
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
 
-/* Posts section styling */
-.posts h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #6A2423; /* Burgundy text */
-  text-align: center;
-  font-weight: 400; /* Lightened font weight */
-}
+  /* Intro section styling reflects modern design aesthetics */
+  .intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
 
+  .intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #6A2423;
+    font-weight: 400;
+  }
 
-/* List styling */
-.posts ul {
-  list-style: none;
-  padding: 0;
-}
+  .intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
 
-.posts ul li {
-  margin-bottom: 0.5rem;
-}
+  /* Posts section styling */
+  .posts h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6A2423;
+    text-align: center;
+    font-weight: 400;
+  }
 
-p {
-  text-transform: none;
-}
+  /* List styling */
+  .posts ul {
+    list-style: none;
+    padding: 0;
+  }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: separate;
-  border-spacing: 0.5rem;
-}
+  .posts ul li {
+    margin-bottom: 0.5rem;
+  }
 
-td, th {
-  padding: 0.25rem 0.5rem; /* Adds space inside cells */
-  text-align: center;
-}
+  .post-card {
+    background: #fff;
+    border: 2px solid #FFD700;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(106, 36, 35, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 4px 16px rgba(106, 36, 35, 0.15);
+  }
+
+  .post-card a {
+    color: #6A2423;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-card p {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  p {
+    text-transform: none;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0.25rem;
+  }
+
+  td,
+  th {
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 1200px) {
+    nav>ul {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    nav ul li>.dropdown {
+      position: static;
+      min-width: 100%;
+      box-shadow: none;
+      border-radius: 0;
+      background: #6A2423;
+      padding: 0;
+      margin-top: 0;
+    }
+
+    .dropdown a {
+      padding: 0.3rem;
+    }
+
+    main {
+      max-width: 100vw;
+      width: 100vw;
+      padding: 1rem;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    header .oval {
+      font-size: 1.5rem;
+      letter-spacing: 0.25em;
+      padding: 0.5rem auto;
+      max-width: 95%;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      border-collapse: separate;
+      border-spacing: 0.25rem;
+    }
+
+    td,
+    th {
+      padding: 0.2rem 0.2rem;
+      text-align: center;
+    }
+  }

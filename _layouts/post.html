@@ -8,7 +8,7 @@
   <main>
     <section class="intro" id="intro">
       <h2>{{ page.title }}</h2>
-      <p>{{ page.description }}</p>
+      <p>{{ page.description | markdownify }}</p>
     </section>
     <section class="content">
       {{ content | markdownify }}
