@@ -25,9 +25,9 @@ Below are tables of available N scale GG1 locomotives from various manufacturers
 | 137-2012     | 4929        | DGLE 1 Stripe   | R    |
 | 137-2013     | 4907        | Tuscan 1 Stripe | R    |
 
-**Notes:**
- - [Spookshow Review](https://spookshow.net/loco/katogg1.html)
- - Additional Amtrak liveries may be available
+[Spookshow Review](https://spookshow.net/loco/katogg1.html)
+
+Additional Amtrak liveries may be available
 
 ## Bachmann
 
@@ -43,9 +43,9 @@ Below are tables of available N scale GG1 locomotives from various manufacturers
 | 65254        | 4866        | Silver/Red      | R   |
 
 
-**Notes:**
- - [Spookshow Review](https://spookshow.net/loco/bachgg1.html)
- - Additional Penn Central liveries may be available
+[Spookshow Review](https://spookshow.net/loco/bachgg1.html)
+
+Additional Penn Central liveries may be available
 
 
 
@@ -73,7 +73,7 @@ The P5A was replaced by the GG1 for passenger service in the 1930s and relegated
 
 
 
-**Notes:**
- - [Spookshow Review](https://spookshow.net/loco/blip5a.html)
- - Additional unlettered and fantasy liveries may be available
+[Spookshow Review](https://spookshow.net/loco/blip5a.html)
+
+Additional unlettered and fantasy liveries may be available
 

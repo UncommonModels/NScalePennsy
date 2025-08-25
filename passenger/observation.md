@@ -16,9 +16,9 @@ The POS21-style blunt-end observation cars were commissioned from Pullman for th
 | 106-069 (set) | Tower view      | Tuscan 3 Stripe    | Optional |
 
 
-**Notes:**
- - The Kato options are part of their 1948 Broadway Limited sets, which come unlighted by default, but they sell lighting kits and preinstalled lighting versions are available.
- - Centralia Car Shops lists a Mountain View and Tower View in its lineup, however they are not included here as they are round-ended observation cars more similar to the [POS211A](#pos211a)
+The Kato options are part of their 1948 Broadway Limited sets, which come unlighted by default, but they sell lighting kits and preinstalled lighting versions are available.
+
+Centralia Car Shops lists a Mountain View and Tower View in its lineup, however they are not included here as they are round-ended observation cars more similar to the [POS211A](#pos211a)
 
 
 # POS21A
@@ -32,8 +32,7 @@ The POS21-style blunt-end observation cars were commissioned from Pullman for th
 | 14356         | Metropolitan View | Fleet of Modernism | Yes    |
 
 
-**Notes:**
- - The Bachmann model is surprisingly accurate, the only issues I have noticed are a slightly small window on the corridor side and an innaccurate generic PRR-logo drumhead. I can't comment on the accuracy of the paint colors much more than that the gold seems a little too bright and the maroon band and tuscan seem a little too dark.
+The Bachmann model is surprisingly accurate, the only issues I have noticed are a slightly small window on the corridor side and an innaccurate generic PRR-logo drumhead. I can't comment on the accuracy of the paint colors much more than that the gold seems a little too bright and the maroon band and tuscan seem a little too dark.
 
 # POS211A
 ---
@@ -49,5 +48,4 @@ The POS211A-style observation cars were commissioned from Pullman for the Fleet 
 | CCS7509-03   | John Edgar Thomson | Tuscan 3 Stripe    | Battery |
 
 
-**Notes:**
- - The Centralia Car Shops cars are slightly inaccurate, as some scouring of forums reveal they are following Pullman's plan 4082 instead of the 4081A that sources indicate the PRR used. There are a few extra windows compared to the prototype, and one is missing from the compartment side. The hallway side window pattern is significantly different. Overall, given the lack of options, I'd rate these as acceptable stand-ins.
+The Centralia Car Shops cars are slightly inaccurate, as some scouring of forums reveal they are following Pullman's plan 4082 instead of the 4081A that sources indicate the PRR used. There are a few extra windows compared to the prototype, and one is missing from the compartment side. The hallway side window pattern is significantly different. Overall, given the lack of options, I'd rate these as acceptable stand-ins.

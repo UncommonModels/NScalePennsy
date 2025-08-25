@@ -19,6 +19,6 @@ layout: post
 | 53953        | 3678        | Streamlined | Brunswick Green | SE   |
 | 53954        | 5338        | Streamlined | Brunswick Green | SE   |
 
-**Notes:**
- - [Spookshow Review](https://spookshow.net/loco/bachk4.html)
- - Having owned a few of these both first and secondhand, I can definitely say I consider them solid models. However, I'm fairly certain (at least some of) the non-streamlined versions should have red cab roofs. Perhaps I'll be one day be confident enough in my airbrush skills to fix this :).
+[Spookshow Review](https://spookshow.net/loco/bachk4.html)
+
+Having owned a few of these both first and secondhand, I can definitely say I consider them solid models. However, I'm fairly certain (at least some of) the non-streamlined versions should have red cab roofs. Perhaps I'll be one day be confident enough in my airbrush skills to fix this :).

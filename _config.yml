@@ -26,6 +26,11 @@ nav_entries:
         url: /freight/cabin-cars.html
       - name: Flatcars
         url: /freight/flatcars.html
+      - name: Gondolas
+        url: /freight/gondolas.html
+      - name: Tank Cars
+        url: /freight/tank-cars.html
+
   - name: Motive Power
     url: /motive-power/
     subentries:
