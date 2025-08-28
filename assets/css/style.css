@@ -222,6 +222,10 @@
     font-weight: 300;
   }
 
+  .content h1 {
+    text-transform: none;
+  }
+
   /* Posts section styling */
   .posts h2 {
     font-size: 2rem;

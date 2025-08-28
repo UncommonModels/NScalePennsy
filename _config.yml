@@ -28,6 +28,8 @@ nav_entries:
         url: /freight/flatcars.html
       - name: Gondolas
         url: /freight/gondolas.html
+      - name: Hoppers
+        url: /freight/hoppers.html
       - name: Tank Cars
         url: /freight/tank-cars.html
 
